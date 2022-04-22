@@ -191,7 +191,7 @@ const ContactUs = () => {
       </Hero>
       <ScrollView
         sx={{
-          padding: { md: "60px 0", xs: "40px 20px" },
+          padding: { md: "60px 0 100px 0", xs: "40px 20px 80px 20px" },
           paddingLeft: { md: "10rem", xs: "20px" },
         }}
         title={languageState.texts.Home.Subtitles[0]}
