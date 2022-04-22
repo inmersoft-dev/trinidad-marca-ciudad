@@ -9,6 +9,8 @@ import { Box, Typography, Button, TextField, useTheme } from "@mui/material";
 
 // own components
 import Container from "components/Container/Container";
+import ScrollView from "layouts/ScrollView/ScrollView";
+import Card from "components/Card/Card";
 
 // layouts
 import Hero from "layouts/Hero/Hero";
@@ -17,10 +19,48 @@ import Hero from "layouts/Hero/Hero";
 import { useLanguage } from "context/LanguageProvider";
 import { useRoute } from "context/RouterProvider";
 
+// images
+import bruce from "assets/images/bruce-mars.jpg";
+
 const ContactUs = () => {
   const { setRouteState } = useRoute();
   const { languageState } = useLanguage();
   const theme = useTheme();
+
+  const cards = [
+    <Card route="/home" img={bruce} imageProps={{ alt: "bruce" }}>
+      <Typography color="secondary" sx={{ fontWeight: 600, color: theme.palette.secondary.main }}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illo, fugiat tempora
+      </Typography>
+    </Card>,
+    <Card route="/home" img={bruce} imageProps={{ alt: "bruce" }}>
+      <Typography color="secondary" sx={{ fontWeight: 600, color: theme.palette.secondary.main }}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illo, fugiat tempora
+      </Typography>
+    </Card>,
+    <Card route="/home" img={bruce} imageProps={{ alt: "bruce" }}>
+      <Typography color="secondary" sx={{ fontWeight: 600, color: theme.palette.secondary.main }}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illo, fugiat tempora
+      </Typography>
+    </Card>,
+    <Card route="/home" img={bruce} imageProps={{ alt: "bruce" }}>
+      <Typography color="secondary" sx={{ fontWeight: 600, color: theme.palette.secondary.main }}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illo, fugiat tempora
+      </Typography>
+    </Card>,
+
+    <Card route="/home" img={bruce} imageProps={{ alt: "bruce" }}>
+      <Typography color="secondary" sx={{ fontWeight: 600, color: theme.palette.secondary.main }}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illo, fugiat tempora
+      </Typography>
+    </Card>,
+
+    <Card route="/home" img={bruce} imageProps={{ alt: "bruce" }}>
+      <Typography color="secondary" sx={{ fontWeight: 600, color: theme.palette.secondary.main }}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illo, fugiat tempora
+      </Typography>
+    </Card>,
+  ];
 
   const { control, handleSubmit } = useForm({
     defaultValues: {
@@ -149,6 +189,14 @@ const ContactUs = () => {
           </Container>
         </Box>
       </Hero>
+      <ScrollView
+        sx={{
+          padding: { md: "60px 0", xs: "40px 20px" },
+          paddingLeft: { md: "10rem", xs: "20px" },
+        }}
+        title={languageState.texts.Home.Subtitles[0]}
+        content={cards}
+      />
     </Box>
   );
 };

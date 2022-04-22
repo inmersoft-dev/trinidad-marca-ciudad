@@ -84,7 +84,7 @@ const Home = () => {
           }}
         >
           <Typography
-            variant="h5"
+            variant="h2"
             sx={{ fontWeight: "bold", marginBottom: { md: "0", xs: "40px" } }}
           >
             {languageState.texts.Home.Title}
