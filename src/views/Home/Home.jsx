@@ -11,15 +11,14 @@ import { Box, Typography, useTheme } from "@mui/material";
 // own components
 import ScrollView from "layouts/ScrollView/ScrollView";
 import Card from "components/Card/Card";
+import Container from "components/Container/Container";
 
 // layouts
 import Hero from "layouts/Hero/Hero";
+import HomeAbout from "layouts/HomeAbout/HomeAbout";
 import Carousel from "components/Carousel/Carousel";
 import CarouselItemArrows from "components/Carousel/CarouselItemArrows";
-import TabScrollView from "layouts/TabScrollView/TabScrollView";
-// import Masonry from "layouts/Masonry/Masonry";
 import CarouselItemDots from "components/Carousel/CarouselItemDots";
-// import Masonry from "layouts/Masonry/Masonry";
 
 // contexts
 import { useLanguage } from "context/LanguageProvider";
@@ -73,16 +72,29 @@ const Home = () => {
   }, []);
 
   return (
-    <Box sx={{ background: theme.palette.secondary.main }}>
-      <Hero />
-      <ScrollView
-        sx={{
-          padding: { md: "40px 0", xs: "40px 20px" },
-          paddingLeft: { md: "10rem", xs: "20px" },
-        }}
-        title={languageState.texts.Home.Subtitles[0]}
-        content={cards}
-      />
+    <Box sx={{ background: theme.palette.secondary.main, paddingBottom: "40px" }}>
+      <Hero>
+        <Container
+          sx={{
+            height: "100%",
+            padding: { md: "0 10rem 60px 10rem", xs: "40px" },
+            flexDirection: { md: "row", xs: "column" },
+            justifyContent: { md: "space-between", xs: "flex-end" },
+            alignItems: { md: "end", xs: "start" },
+          }}
+        >
+          <Typography
+            variant="h5"
+            sx={{ fontWeight: "bold", marginBottom: { md: "0", xs: "40px" } }}
+          >
+            {languageState.texts.Home.Title}
+          </Typography>
+          <Typography sx={{ width: { md: "600px", xs: "100%" } }}>
+            {languageState.texts.Home.Paragraph}
+          </Typography>
+        </Container>
+      </Hero>
+      <HomeAbout />
       <Marquee gradient={false} style={{ backgroundColor: theme.palette.warning.dark }} speed="100">
         <Typography variant="h1" sx={{ color: theme.palette.carousel.secondary, mx: 2 }}>
           Convocatorias
@@ -94,39 +106,20 @@ const Home = () => {
         pagination={true}
         backgroundColor={theme.palette.carousel.secondary}
       />
-
-      <TabScrollView />
       <Carousel
         CarouselItem={<CarouselItemArrows />}
         navigation={true}
         pagination={false}
         backgroundColor={theme.palette.secondary.carousel}
       />
-      <Box
+      <ScrollView
         sx={{
-          padding: "40px 0",
+          padding: { md: "40px 0", xs: "40px 20px" },
           paddingLeft: { md: "10rem", xs: "20px" },
-          background: theme.palette.primary.main,
         }}
-      >
-        <Box>
-          <Typography variant="h4" sx={{ fontWeight: "bold", color: theme.palette.primary.light }}>
-            {languageState.texts.Home.Subtitles[0]}
-          </Typography>
-        </Box>
-        <ScrollView
-          sx={{ padding: "40px 0", paddingLeft: { md: "40px", xs: "0" } }}
-          title={languageState.texts.Home.Subtitles[0]}
-          content={cards}
-        />
-      </Box>
-      <Carousel
-        CarouselItem={<CarouselItemDots colorColum={theme.palette.secondary.carousel} />}
-        navigation={false}
-        pagination={true}
-        backgroundColor={theme.palette.secondary.dark}
+        title={languageState.texts.Home.Subtitles[0]}
+        content={cards}
       />
-      {/* <Masonry /> */}
     </Box>
   );
 };
