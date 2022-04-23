@@ -55,8 +55,11 @@ const AboutUs = () => {
         </Container>
       </Container>
       <Container
-        justify="left"
-        sx={{ flexWrap: "wrap", padding: { lg: "80px 10rem", xs: "20px 40px 80px 40px" } }}
+        sx={{
+          flexWrap: "wrap",
+          padding: { lg: "80px 10rem", xs: "20px 40px 80px 40px" },
+          justifyContent: { lg: "left", xs: "center" },
+        }}
       >
         {languageState.texts.About.Agenda.map((item, i) => (
           <Container key={i} sx={{ width: "500px", margin: "20px 0" }}>
