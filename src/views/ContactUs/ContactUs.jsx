@@ -195,6 +195,7 @@ const ContactUs = () => {
           paddingLeft: { md: "10rem", xs: "20px" },
         }}
         title={languageState.texts.Home.Subtitles[0]}
+        titleProps={{ variant: "h4", sx: { fontWeight: "bold" } }}
         content={cards}
       />
     </Box>
