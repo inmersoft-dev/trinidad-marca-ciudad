@@ -75,7 +75,7 @@ const ContactUs = () => {
   };
 
   useEffect(() => {
-    setRouteState({ type: "set", to: 5 });
+    setRouteState({ type: "set", to: 3 });
   }, []);
 
   return (

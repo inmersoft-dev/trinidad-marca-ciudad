@@ -16,9 +16,6 @@ import Container from "components/Container/Container";
 // layouts
 import Hero from "layouts/Hero/Hero";
 import HomeAbout from "layouts/HomeAbout/HomeAbout";
-import Carousel from "components/Carousel/Carousel";
-import CarouselItemArrows from "components/Carousel/CarouselItemArrows";
-import CarouselItemDots from "components/Carousel/CarouselItemDots";
 
 // contexts
 import { useLanguage } from "context/LanguageProvider";
@@ -89,29 +86,14 @@ const Home = () => {
           >
             {languageState.texts.Home.Title}
           </Typography>
-          <Typography sx={{ width: { md: "600px", xs: "100%" } }}>
-            {languageState.texts.Home.Paragraph}
-          </Typography>
         </Container>
       </Hero>
       <HomeAbout />
       <Marquee gradient={false} style={{ backgroundColor: theme.palette.warning.dark }} speed="100">
         <Typography variant="h1" sx={{ color: theme.palette.carousel.secondary, mx: 2 }}>
-          Convocatorias
+          {languageState.texts.Home.Marquee}
         </Typography>
       </Marquee>
-      <Carousel
-        CarouselItem={<CarouselItemDots colorColum={theme.palette.carousel.main} />}
-        navigation={false}
-        pagination={true}
-        backgroundColor={theme.palette.carousel.secondary}
-      />
-      <Carousel
-        CarouselItem={<CarouselItemArrows />}
-        navigation={true}
-        pagination={false}
-        backgroundColor={theme.palette.secondary.carousel}
-      />
       <ScrollView
         sx={{
           padding: { md: "40px 0", xs: "40px 20px" },
@@ -119,6 +101,7 @@ const Home = () => {
         }}
         title={languageState.texts.Home.Subtitles[0]}
         content={cards}
+        titleProps={{ variant: "h4", sx: { fontWeight: "bold" } }}
       />
     </Box>
   );

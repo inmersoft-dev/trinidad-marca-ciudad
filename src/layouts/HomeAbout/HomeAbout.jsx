@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 /* eslint-disable react/function-component-definition */
 // images
 import illus from "assets/images/illus.svg";
@@ -25,10 +26,11 @@ const HomeAbout = () => {
           <Typography variant="h3">{languageState.texts.Home.About.Title}</Typography>
           <Divider sx={{ width: "80px", borderWidth: "2px" }} />
         </Box>
-
-        <Typography sx={{ marginTop: "5rem" }}>
-          {languageState.texts.Home.About.Paragraph}
-        </Typography>
+        {languageState.texts.Home.About.Paragraph.map((item, i) => (
+          <Typography key={i} sx={{ marginTop: i === 0 ? "5rem" : "20px" }}>
+            {item}
+          </Typography>
+        ))}
       </Container>
     </Container>
   );

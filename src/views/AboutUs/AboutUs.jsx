@@ -2,19 +2,29 @@
 import { useEffect } from "react";
 
 // @mui components
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
-// layouts
-import Hero from "layouts/Hero/Hero";
+// own components
 import KnowUs from "components/KnowUs/KnowUs";
 import OurValues from "components/OurValues/OurValues";
 
+// contexts
+import { useLanguage } from "context/LanguageProvider";
+import { useRoute } from "context/RouterProvider";
+
 const AboutUs = () => {
-  useEffect(() => {}, []);
+  const { setRouteState } = useRoute();
+  const { languageState } = useLanguage();
+
+  useEffect(() => {
+    setRouteState({ type: "set", to: 1 });
+  }, []);
 
   return (
     <Box>
-      <Hero sx={{ height: "75vh" }} />
+      <Typography sx={{ marginTop: "7rem", textAlign: "center" }} variant="h2">
+        {languageState.texts.About.Title}
+      </Typography>
       <KnowUs />
       <OurValues />
     </Box>

@@ -25,7 +25,7 @@ const News = () => {
   ];
 
   useEffect(() => {
-    setRouteState({ type: "set", to: 4 });
+    setRouteState({ type: "set", to: 2 });
   }, []);
 
   return (

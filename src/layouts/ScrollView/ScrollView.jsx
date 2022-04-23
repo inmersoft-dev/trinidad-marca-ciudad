@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 
 // @mui components
-import { Box, Typography } from "@mui/material";
+import { Box, Divider, Typography } from "@mui/material";
 
 // own components
 import Container from "components/Container/Container";
@@ -48,7 +48,11 @@ const ScrollView = (props) => {
 
   return (
     <Container direction="column" sx={newSx}>
-      <Typography {...titleProps}>{title}</Typography>
+      <Box>
+        <Typography {...titleProps}>{title}</Typography>
+        <Divider sx={{ width: "80px", borderWidth: "2px", marginBottom: "20px" }} />
+      </Box>
+
       <Box className="uk-position-relative uk-visible-toggle" data-tabindex="-1" data-uk-slider>
         <motion.ul
           variants={container}
