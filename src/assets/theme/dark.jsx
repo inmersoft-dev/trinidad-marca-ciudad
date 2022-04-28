@@ -12,6 +12,11 @@ const dark = createTheme({
       card: "#fed9a6",
       contrastText: "#ffffff",
     },
+    input: {
+      main: "#ffffff",
+      light: "#FFd9a5",
+      dark: "#ffffff",
+    },
     carousel: {
       main: "#ffc77d",
       secondary: "#ffddb0",

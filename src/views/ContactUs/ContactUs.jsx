@@ -21,6 +21,7 @@ import { useRoute } from "context/RouterProvider";
 
 // images
 import bruce from "assets/images/bruce-mars.jpg";
+import contactI from "assets/images/contact.jpg";
 
 const ContactUs = () => {
   const { setRouteState } = useRoute();
@@ -28,35 +29,65 @@ const ContactUs = () => {
   const theme = useTheme();
 
   const cards = [
-    <Card route="/home" img={bruce} imageProps={{ alt: "bruce" }}>
-      <Typography color="secondary" sx={{ fontWeight: 600, color: theme.palette.secondary.main }}>
+    <Card
+      sx={{ padding: "10px", borderRadius: "10px" }}
+      contentPosition="down"
+      img={bruce}
+      imageProps={{ alt: "bruce" }}
+    >
+      <Typography sx={{ fontWeight: 600, color: theme.palette.primary.dark }}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illo, fugiat tempora
       </Typography>
     </Card>,
-    <Card route="/home" img={bruce} imageProps={{ alt: "bruce" }}>
-      <Typography color="secondary" sx={{ fontWeight: 600, color: theme.palette.secondary.main }}>
+    <Card
+      sx={{ padding: "10px", borderRadius: "10px" }}
+      contentPosition="down"
+      img={bruce}
+      imageProps={{ alt: "bruce" }}
+    >
+      <Typography sx={{ fontWeight: 600, color: theme.palette.primary.dark }}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illo, fugiat tempora
       </Typography>
     </Card>,
-    <Card route="/home" img={bruce} imageProps={{ alt: "bruce" }}>
-      <Typography color="secondary" sx={{ fontWeight: 600, color: theme.palette.secondary.main }}>
+    <Card
+      sx={{ padding: "10px", borderRadius: "10px" }}
+      contentPosition="down"
+      img={bruce}
+      imageProps={{ alt: "bruce" }}
+    >
+      <Typography sx={{ fontWeight: 600, color: theme.palette.primary.dark }}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illo, fugiat tempora
       </Typography>
     </Card>,
-    <Card route="/home" img={bruce} imageProps={{ alt: "bruce" }}>
-      <Typography color="secondary" sx={{ fontWeight: 600, color: theme.palette.secondary.main }}>
+    <Card
+      sx={{ padding: "10px", borderRadius: "10px" }}
+      contentPosition="down"
+      img={bruce}
+      imageProps={{ alt: "bruce" }}
+    >
+      <Typography sx={{ fontWeight: 600, color: theme.palette.primary.dark }}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illo, fugiat tempora
       </Typography>
     </Card>,
 
-    <Card route="/home" img={bruce} imageProps={{ alt: "bruce" }}>
-      <Typography color="secondary" sx={{ fontWeight: 600, color: theme.palette.secondary.main }}>
+    <Card
+      sx={{ padding: "10px", borderRadius: "10px" }}
+      contentPosition="down"
+      img={bruce}
+      imageProps={{ alt: "bruce" }}
+    >
+      <Typography sx={{ fontWeight: 600, color: theme.palette.primary.dark }}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illo, fugiat tempora
       </Typography>
     </Card>,
 
-    <Card route="/home" img={bruce} imageProps={{ alt: "bruce" }}>
-      <Typography color="secondary" sx={{ fontWeight: 600, color: theme.palette.secondary.main }}>
+    <Card
+      sx={{ padding: "10px", borderRadius: "10px" }}
+      contentPosition="down"
+      img={bruce}
+      imageProps={{ alt: "bruce" }}
+    >
+      <Typography sx={{ fontWeight: 600, color: theme.palette.primary.dark }}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illo, fugiat tempora
       </Typography>
     </Card>,
@@ -80,13 +111,13 @@ const ContactUs = () => {
 
   return (
     <Box>
-      <Hero>
+      <Hero background={contactI}>
         <Box>
           <Container
             direction="column"
             justify="flex-start"
             sx={{
-              background: `${theme.palette.secondary.main}Cc`,
+              background: `${theme.palette.primary.main}Cc`,
               height: "100vh",
               width: { lg: "50vw", md: "60vw", xs: "100vw" },
               marginLeft: { md: "10rem", xs: 0 },
@@ -94,9 +125,7 @@ const ContactUs = () => {
               overflow: "auto",
             }}
           >
-            <Typography variant="h3" color="primary">
-              {languageState.texts.Contact.Title}
-            </Typography>
+            <Typography variant="h3">{languageState.texts.Contact.Title}</Typography>
             <Typography
               variant="subtitle2"
               sx={{ color: theme.palette.primary.light, marginTop: "30px" }}
@@ -117,7 +146,7 @@ const ContactUs = () => {
                     {...field}
                     required
                     inputProps={{ autoComplete: "xyz12asdsad3" }}
-                    color="primary"
+                    color="input"
                     id="xyz123"
                     name="xyz123"
                     autoComplete="nope"
@@ -139,7 +168,7 @@ const ContactUs = () => {
                     {...field}
                     required
                     inputProps={{ autoComplete: "xyz12asdsad3" }}
-                    color="primary"
+                    color="input"
                     id="xyz123"
                     name="xyz123"
                     autoComplete="nope"
@@ -162,7 +191,7 @@ const ContactUs = () => {
                     {...field}
                     required
                     inputProps={{ autoComplete: "xyz12asdsad3" }}
-                    color="primary"
+                    color="input"
                     maxRows={4}
                     minRows={4}
                     id="xyz123"
