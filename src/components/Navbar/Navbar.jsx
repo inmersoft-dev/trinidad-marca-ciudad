@@ -144,7 +144,7 @@ const Navbar = () => {
           transition: "all 500ms ease",
           padding: "20px 0",
           opacity: showSearch ? 0 : 1,
-          transform: onScroll ? "translateY(-80px)" : "translateY(0)",
+          transform: onScroll ? "translateY(-100px)" : "translateY(0)",
         }}
         elevation={0}
         position="fixed"
@@ -204,7 +204,12 @@ const Navbar = () => {
             </Box>
             <Button
               color="secondary"
-              sx={{ marginLeft: "50px", textTransform: "none", padding: "0 20px" }}
+              sx={{
+                display: { xs: "none", large: "initial" },
+                marginLeft: "50px",
+                textTransform: "none",
+                padding: "0 20px",
+              }}
               variant="contained"
             >
               {languageState.texts.Navbar.Participate}

@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
 // @mui components
-import { useTheme, Drawer, IconButton, Typography, Box } from "@mui/material";
+import { useTheme, Button, Drawer, IconButton, Typography, Box } from "@mui/material";
 
 // @mui icons
 import CloseIcon from "@mui/icons-material/Close";
@@ -55,7 +55,7 @@ const NavigationDrawer = (props) => {
       <Container
         direction="column"
         sx={{
-          background: theme.palette.secondary.main,
+          background: theme.palette.primary.main,
           padding: "40px",
           width: "400px",
           height: "100%",
@@ -67,7 +67,7 @@ const NavigationDrawer = (props) => {
           </IconButton>
         </Container>
         <Container direction="column">
-          <Image img={logo} width={120} height={40} />
+          <Image img={logo} width={60} height={60} />
           <Box sx={{ marginTop: "20px" }}>
             {languageState.texts.Navbar.Links.map((item, i) => (
               <Box key={item.id}>
@@ -77,7 +77,7 @@ const NavigationDrawer = (props) => {
                     textDecoration: "none",
                     color:
                       item.index === routeState.route
-                        ? theme.palette.primary.main
+                        ? theme.palette.secondary.main
                         : theme.palette.text.main,
                   }}
                   onClick={onClose}
@@ -140,6 +140,18 @@ const NavigationDrawer = (props) => {
               </Box>
             ))}
           </Box>
+          <Container sx={{ width: "100%", marginTop: "10px" }}>
+            <Button
+              color="secondary"
+              sx={{
+                textTransform: "none",
+                padding: "5px 20px",
+              }}
+              variant="contained"
+            >
+              {languageState.texts.Navbar.Participate}
+            </Button>
+          </Container>
         </Container>
       </Container>
     </Drawer>

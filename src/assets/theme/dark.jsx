@@ -8,7 +8,8 @@ const dark = createTheme({
     primary: {
       main: "#E48200",
       light: "#FFd9a5",
-      dark: "#af6a00",
+      dark: "#d27300",
+      card: "#fed9a6",
       contrastText: "#ffffff",
     },
     carousel: {

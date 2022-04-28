@@ -4,7 +4,7 @@
 import illus from "assets/images/illus.svg";
 
 // @mui components
-import { Divider, Typography, Box } from "@mui/material";
+import { useTheme, Divider, Typography, Box } from "@mui/material";
 
 // own components
 import Image from "components/Image/Image";
@@ -15,7 +15,7 @@ import { useLanguage } from "context/LanguageProvider";
 
 const HomeAbout = () => {
   const { languageState } = useLanguage();
-
+  const theme = useTheme();
   return (
     <Container
       sx={{
@@ -33,8 +33,12 @@ const HomeAbout = () => {
         sx={{ width: { lg: "600px", xs: "auto" }, padding: { lg: "100px 0 90px 0", xs: "0" } }}
       >
         <Box sx={{ marginTop: { lg: 0, xs: "40px" } }}>
-          <Typography variant="h3">{languageState.texts.Home.About.Title}</Typography>
-          <Divider sx={{ width: "80px", borderWidth: "2px" }} />
+          <Typography sx={{ color: theme.palette.primary.light }} variant="h3">
+            {languageState.texts.Home.About.Title}
+          </Typography>
+          <Divider
+            sx={{ width: "80px", borderWidth: "2px", borderColor: theme.palette.primary.main }}
+          />
         </Box>
         {languageState.texts.Home.About.Paragraph.map((item, i) => (
           <Typography key={i} sx={{ marginTop: i === 0 ? { lg: "5rem", xs: "20px" } : "20px" }}>

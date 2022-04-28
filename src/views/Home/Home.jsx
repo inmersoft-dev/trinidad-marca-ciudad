@@ -23,6 +23,7 @@ import { useRoute } from "context/RouterProvider";
 
 // images
 import bruce from "assets/images/bruce-mars.jpg";
+import hero1 from "assets/images/hero1.jpg";
 
 const Home = () => {
   const { setRouteState } = useRoute();
@@ -36,7 +37,7 @@ const Home = () => {
       img={bruce}
       imageProps={{ alt: "bruce" }}
     >
-      <Typography color="primary" sx={{ fontWeight: 600, color: theme.palette.secondary.main }}>
+      <Typography sx={{ fontWeight: 600, color: theme.palette.primary.dark }}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illo, fugiat tempora
       </Typography>
     </Card>,
@@ -46,7 +47,7 @@ const Home = () => {
       img={bruce}
       imageProps={{ alt: "bruce" }}
     >
-      <Typography color="primary" sx={{ fontWeight: 600, color: theme.palette.secondary.main }}>
+      <Typography sx={{ fontWeight: 600, color: theme.palette.primary.dark }}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illo, fugiat tempora
       </Typography>
     </Card>,
@@ -56,7 +57,7 @@ const Home = () => {
       img={bruce}
       imageProps={{ alt: "bruce" }}
     >
-      <Typography color="primary" sx={{ fontWeight: 600, color: theme.palette.secondary.main }}>
+      <Typography sx={{ fontWeight: 600, color: theme.palette.primary.dark }}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illo, fugiat tempora
       </Typography>
     </Card>,
@@ -66,18 +67,7 @@ const Home = () => {
       img={bruce}
       imageProps={{ alt: "bruce" }}
     >
-      <Typography color="primary" sx={{ fontWeight: 600, color: theme.palette.secondary.main }}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illo, fugiat tempora
-      </Typography>
-    </Card>,
-
-    <Card
-      sx={{ padding: "10px", borderRadius: "10px" }}
-      contentPosition="down"
-      img={bruce}
-      imageProps={{ alt: "bruce" }}
-    >
-      <Typography color="primary" sx={{ fontWeight: 600, color: theme.palette.secondary.main }}>
+      <Typography sx={{ fontWeight: 600, color: theme.palette.primary.dark }}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illo, fugiat tempora
       </Typography>
     </Card>,
@@ -88,7 +78,18 @@ const Home = () => {
       img={bruce}
       imageProps={{ alt: "bruce" }}
     >
-      <Typography color="primary" sx={{ fontWeight: 600, color: theme.palette.secondary.main }}>
+      <Typography sx={{ fontWeight: 600, color: theme.palette.primary.dark }}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illo, fugiat tempora
+      </Typography>
+    </Card>,
+
+    <Card
+      sx={{ padding: "10px", borderRadius: "10px" }}
+      contentPosition="down"
+      img={bruce}
+      imageProps={{ alt: "bruce" }}
+    >
+      <Typography sx={{ fontWeight: 600, color: theme.palette.primary.dark }}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illo, fugiat tempora
       </Typography>
     </Card>,
@@ -100,7 +101,7 @@ const Home = () => {
 
   return (
     <Box sx={{ background: theme.palette.secondary.main, paddingBottom: "40px" }}>
-      <Hero>
+      <Hero background={hero1}>
         <Container
           sx={{
             height: "100%",
@@ -126,6 +127,7 @@ const Home = () => {
       </Marquee>
       <ScrollView
         sx={{
+          background: theme.palette.primary.dark,
           padding: { md: "40px 0", xs: "40px 20px" },
           paddingLeft: { md: "10rem", xs: "20px" },
         }}

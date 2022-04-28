@@ -36,7 +36,7 @@ const Card = (props) => {
   const Content = () => <CardContent>{children}</CardContent>;
 
   const newSx = {
-    background: theme.palette.primary.light,
+    background: theme.palette.primary.card,
     width: { md: "389px", xs: "335px" },
     marginRight: "30px",
     border: border ? `1px solid ${theme.palette.secondary.another}` : "",
