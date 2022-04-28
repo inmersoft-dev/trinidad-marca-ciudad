@@ -100,7 +100,7 @@ const Home = () => {
   }, []);
 
   return (
-    <Box sx={{ background: theme.palette.secondary.main, paddingBottom: "40px" }}>
+    <Box sx={{ background: theme.palette.primary.dark, paddingBottom: "40px" }}>
       <Hero background={hero1}>
         <Container
           sx={{

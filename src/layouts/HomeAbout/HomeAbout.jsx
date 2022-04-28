@@ -19,6 +19,7 @@ const HomeAbout = () => {
   return (
     <Container
       sx={{
+        background: theme.palette.secondary.main,
         height: { lg: "700px", xs: "auto" },
         padding: { md: "0 10rem", xs: "40px 40px" },
         flexDirection: { lg: "row", xs: "column" },
