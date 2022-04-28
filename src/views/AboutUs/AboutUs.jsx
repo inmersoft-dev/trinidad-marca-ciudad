@@ -29,8 +29,8 @@ const AboutUs = () => {
     <Box sx={{ background: theme.palette.secondary.main, paddingTop: "40px" }}>
       <Typography
         sx={{
-          marginTop: "7rem",
-          marginBottom: "40px",
+          marginTop: { lg: "7rem", xs: "70px" },
+          marginBottom: { lg: "40px", xs: "0px" },
           textAlign: "center",
           padding: { md: "0 10rem", xs: "40px 40px" },
         }}
@@ -48,14 +48,17 @@ const AboutUs = () => {
           sx={{
             marginTop: { lg: 0, xs: "20px" },
             justifyContent: { lg: "initial", xs: "center" },
-            width: "50%",
+            width: { lg: "50%", xs: "100%" },
           }}
         >
           <Image img={about} width="100%" height="100%" />
         </Container>
 
         <Container
-          sx={{ width: "44%", margin: { md: "20px 7rem 80px 60px", xs: "40px 40px 80px 40px" } }}
+          sx={{
+            width: { lg: "44%", xs: "auto" },
+            margin: { md: "20px 7rem 80px 60px", xs: "40px 40px 80px 40px" },
+          }}
           direction="column"
         >
           {languageState.texts.About.Paragraph.map((item, i) => (
@@ -65,24 +68,31 @@ const AboutUs = () => {
           ))}
         </Container>
       </Container>
-      <Container
-        sx={{
-          background: theme.palette.primary.main,
-          flexWrap: "wrap",
-          padding: { lg: "80px 10rem", xs: "20px 40px 80px 40px" },
-        }}
-        justify="center"
-      >
-        {languageState.texts.About.Agenda.map((item, i) => (
-          <Container justify="left" key={i} sx={{ width: "500px", margin: "20px 0" }}>
-            <Typography sx={{ width: "200px" }}>
-              <span style={{ fontWeight: "bold" }}>{item.title} - </span>
-            </Typography>
-            <Typography sx={{ width: "200px" }}>
-              <span>{item.content}</span>
-            </Typography>
-          </Container>
-        ))}
+      <Container sx={{ width: "100%", background: theme.palette.primary.main }} justify="center">
+        <Container
+          sx={{
+            flexWrap: "wrap",
+            padding: { lg: "80px 10rem", xs: "20px 40px 80px 40px" },
+            margin: "auto",
+            width: { lg: "80%", xs: "100%" },
+            justifyContent: { lg: "left", xs: "center" },
+          }}
+        >
+          {languageState.texts.About.Agenda.map((item, i) => (
+            <Container
+              justify="left"
+              key={i}
+              sx={{ width: { lg: "450px", xs: "500px" }, margin: "20px 20px 20px 0" }}
+            >
+              <Typography sx={{ width: "200px" }}>
+                <span style={{ fontWeight: "bold" }}>{item.title} - </span>
+              </Typography>
+              <Typography sx={{ width: { lg: "250px", xs: "300px" } }}>
+                <span>{item.content}</span>
+              </Typography>
+            </Container>
+          ))}
+        </Container>
       </Container>
     </Box>
   );
