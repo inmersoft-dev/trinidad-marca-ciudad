@@ -148,7 +148,7 @@ const Navbar = () => {
         }}
         elevation={0}
         position="fixed"
-        color="secondary"
+        color="primary"
       >
         <Container
           align="center"
@@ -165,7 +165,7 @@ const Navbar = () => {
           >
             <MenuIcon />
           </IconButton>
-          <Image img={logo} width={120} height={40} />
+          <Image img={logo} width={60} height={60} />
           <Container>
             <Box sx={{ display: { xs: "none", lg: "flex" } }}>
               {languageState.texts.Navbar.Links.map((item, i) => (
@@ -174,7 +174,7 @@ const Navbar = () => {
                     <Button
                       id={`b${i}`}
                       onClick={handleLink}
-                      color={item.index === routeState.route ? "primary" : "text"}
+                      color={item.index === routeState.route ? "secondary" : "text"}
                       sx={{ textTransform: "none" }}
                       size="medium"
                       ref={item.menu ? anchorRef : null}
@@ -202,6 +202,13 @@ const Navbar = () => {
                 </Container>
               ))}
             </Box>
+            <Button
+              color="secondary"
+              sx={{ marginLeft: "50px", textTransform: "none", padding: "0 20px" }}
+              variant="contained"
+            >
+              {languageState.texts.Navbar.Participate}
+            </Button>
             <Button
               sx={{
                 marginLeft: "40px",

@@ -36,7 +36,7 @@ const Card = (props) => {
   const Content = () => <CardContent>{children}</CardContent>;
 
   const newSx = {
-    background: theme.palette.text.main,
+    background: theme.palette.primary.light,
     width: { md: "389px", xs: "335px" },
     marginRight: "30px",
     border: border ? `1px solid ${theme.palette.secondary.another}` : "",
@@ -57,7 +57,7 @@ const Card = (props) => {
           className={newImageProps}
           image={img}
           alt={imageProps.alt}
-          sx={{ borderRadius: contentPosition === "up" ? "5px 5px 0 0" : "0 0 5px 5px" }}
+          sx={{ borderRadius: contentPosition === "up" ? "5px 5px 0 0" : "10px" }}
         />
         {contentPosition === "down" && <Content />}
         {route !== "" && (

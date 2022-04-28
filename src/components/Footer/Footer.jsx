@@ -29,7 +29,7 @@ const Footer = () => {
   useEffect(() => {}, [routeState]);
 
   return (
-    <Box sx={{ background: theme.palette.secondary.dark }}>
+    <Box sx={{ background: theme.palette.secondary.footer }}>
       <Grid
         sx={{
           flexGrow: 1,

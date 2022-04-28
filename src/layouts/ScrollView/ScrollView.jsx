@@ -65,7 +65,7 @@ const ScrollView = (props) => {
             <Box
               key={`s${i}`}
               className="uk-panel"
-              sx={{ width: { md: "390px", xs: "335px" }, marginRight: "40px" }}
+              sx={{ width: { md: "390px", xs: "335px" }, marginRight: "20px" }}
             >
               <motion.div variants={ulItem} viewport={{ once: true }}>
                 {item}

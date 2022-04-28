@@ -30,35 +30,65 @@ const Home = () => {
   const theme = useTheme();
 
   const cards = [
-    <Card route="/home" img={bruce} imageProps={{ alt: "bruce" }}>
-      <Typography color="secondary" sx={{ fontWeight: 600, color: theme.palette.secondary.main }}>
+    <Card
+      sx={{ padding: "10px", borderRadius: "10px" }}
+      contentPosition="down"
+      img={bruce}
+      imageProps={{ alt: "bruce" }}
+    >
+      <Typography color="primary" sx={{ fontWeight: 600, color: theme.palette.secondary.main }}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illo, fugiat tempora
       </Typography>
     </Card>,
-    <Card route="/home" img={bruce} imageProps={{ alt: "bruce" }}>
-      <Typography color="secondary" sx={{ fontWeight: 600, color: theme.palette.secondary.main }}>
+    <Card
+      sx={{ padding: "10px", borderRadius: "10px" }}
+      contentPosition="down"
+      img={bruce}
+      imageProps={{ alt: "bruce" }}
+    >
+      <Typography color="primary" sx={{ fontWeight: 600, color: theme.palette.secondary.main }}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illo, fugiat tempora
       </Typography>
     </Card>,
-    <Card route="/home" img={bruce} imageProps={{ alt: "bruce" }}>
-      <Typography color="secondary" sx={{ fontWeight: 600, color: theme.palette.secondary.main }}>
+    <Card
+      sx={{ padding: "10px", borderRadius: "10px" }}
+      contentPosition="down"
+      img={bruce}
+      imageProps={{ alt: "bruce" }}
+    >
+      <Typography color="primary" sx={{ fontWeight: 600, color: theme.palette.secondary.main }}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illo, fugiat tempora
       </Typography>
     </Card>,
-    <Card route="/home" img={bruce} imageProps={{ alt: "bruce" }}>
-      <Typography color="secondary" sx={{ fontWeight: 600, color: theme.palette.secondary.main }}>
+    <Card
+      sx={{ padding: "10px", borderRadius: "10px" }}
+      contentPosition="down"
+      img={bruce}
+      imageProps={{ alt: "bruce" }}
+    >
+      <Typography color="primary" sx={{ fontWeight: 600, color: theme.palette.secondary.main }}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illo, fugiat tempora
       </Typography>
     </Card>,
 
-    <Card route="/home" img={bruce} imageProps={{ alt: "bruce" }}>
-      <Typography color="secondary" sx={{ fontWeight: 600, color: theme.palette.secondary.main }}>
+    <Card
+      sx={{ padding: "10px", borderRadius: "10px" }}
+      contentPosition="down"
+      img={bruce}
+      imageProps={{ alt: "bruce" }}
+    >
+      <Typography color="primary" sx={{ fontWeight: 600, color: theme.palette.secondary.main }}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illo, fugiat tempora
       </Typography>
     </Card>,
 
-    <Card route="/home" img={bruce} imageProps={{ alt: "bruce" }}>
-      <Typography color="secondary" sx={{ fontWeight: 600, color: theme.palette.secondary.main }}>
+    <Card
+      sx={{ padding: "10px", borderRadius: "10px" }}
+      contentPosition="down"
+      img={bruce}
+      imageProps={{ alt: "bruce" }}
+    >
+      <Typography color="primary" sx={{ fontWeight: 600, color: theme.palette.secondary.main }}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illo, fugiat tempora
       </Typography>
     </Card>,

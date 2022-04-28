@@ -6,8 +6,8 @@ const dark = createTheme({
   palette: {
     type: "dark",
     primary: {
-      main: "#fbac33",
-      light: "#ffd8a3",
+      main: "#E48200",
+      light: "#FFd9a5",
       dark: "#af6a00",
       contrastText: "#ffffff",
     },
@@ -19,9 +19,10 @@ const dark = createTheme({
       main: "#f29554",
     },
     secondary: {
-      main: "#02415a",
-      light: "#B9B5FF",
-      dark: "#012d3e",
+      main: "#F2A92F",
+      light: "#FFE6BC",
+      dark: "#a97620",
+      footer: "#012d3e",
       contrastText: "#ffffff",
       special: "#122133",
       carousel: "#006485",
@@ -54,10 +55,10 @@ const dark = createTheme({
     },
     divider: "rgba(0,0,0,0.12)",
     background: {
-      default: "#02415a",
-      paper: "#00435b",
-      button: "#00435b",
-      paper2: "#00435b",
+      default: "#E48200",
+      paper: "#E48200",
+      button: "#E48200",
+      paper2: "#E48200",
     },
     text: {
       main: "#fff",
@@ -160,7 +161,7 @@ const dark = createTheme({
   components: {
     MuiCssBaseline: {
       styleOverrides: {
-        body: darkScrollbar({ track: "rgba(255,0,0,0)", thumb: "#405163", active: "#405163" }),
+        body: darkScrollbar({ track: "rgba(255,0,0,0)", thumb: "#FFE6BC", active: "#FFE6BC" }),
       },
     },
   },
