@@ -112,8 +112,12 @@ const Home = () => {
           }}
         >
           <Typography
-            variant="h2"
-            sx={{ fontWeight: "bold", marginBottom: { md: "0", xs: "40px" } }}
+            variant="h1"
+            sx={{
+              fontSize: { xs: "40px", lg: "64px" },
+              fontWeight: "bold",
+              marginBottom: { md: "0", xs: "40px" },
+            }}
           >
             {languageState.texts.Home.Title}
           </Typography>
