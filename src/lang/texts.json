@@ -1,0 +1,145 @@
+{
+  "es": {
+    "Home": {
+      "Subtitles": ["Nuestras Noticias"],
+      "Title": "Construyamos Trinidad juntos",
+      "About": {
+        "Title": "Marca Trinidad",
+        "Paragraph": [
+          "Hace ya mas de 2 años nos planteamos una sencilla pregunta: ?cómo mostrar trinidad al mundo? Durante este tiempo hemos realizado una intensa investigación y el resultado ha sido la decisión de trabajar en un proyecto de ciudad que dinamize los diferentes actores, estimula el sentimiento de pertenencia y ponga en valor el capital de Trinidad como ciudad",
+          "Para esto nos planteamos una agenda en este 2022 que pretende abordar muchas de las cuestiones para poder llevar a cabo este gran proyecto.",
+          "Nuestro objetivo es conocer de primera mano que sienten los trinitarios respecto a su tierra, a sus valores compartidos, y qué esperan de nuestra ciudad en el futuro, teniendo muy presente de dónde venimos y lo que somos.",
+          "La Marca Trinidad no es solo una imagen o una campaña de marketing, es defender nuestros valores, es apostar por la calidad de vida, por nuestra gastronomía, por el clima, y por todas esas cosas que convierten nuestra ciudad en un maravilloso espacio en el que vivir y visitar."
+        ]
+      },
+      "Marquee": "Construyamos juntos una marca que nos identifique"
+    },
+    "Contact": {
+      "Title": "Contáctenos",
+      "Subtitle": "A lo largo del proceso será imprescindible la participación de todos los actores de ciudad, y del ciudadano como el principal portador y defensor de la marca. Construyamos Trinidad juntos, inscríbete ahora.",
+      "Submit": "Enviar",
+      "Name": {
+        "Label": "Nombre y apellidos",
+        "Placeholder": "Ej: Juan Pablo Marinez"
+      },
+      "Email": {
+        "Label": "Correo electrónico",
+        "Placeholder": "Ej: juanpablomartines@email.com"
+      },
+      "Message": {
+        "Label": "Mensaje",
+        "Placeholder": "Algún mensaje"
+      }
+    },
+    "About": {
+      "Title": "Sobre la Marca Trinidad",
+      "Paragraph": [
+        "Una Marca no es solo un producto publicitario, un logo o un eslogan. Una marca es una forma de entender el mundo, una forma de definir lo que somos, como nos relacionamos, nuestros gustos, nuestras pasiones. Las marcas forman parte de nuestro día a día, y como gestores de lo público, somos conscientes de la relevancia que tienen para nuestros vecinos y vecinas.",
+        "Desde la Oficina del Conservador de Trinidad y el valle de los Ingenios nos planteamos, hace ya más de dos años, una sencilla pregunta: ¿cómo mostrar trinidad al mundo(que es ser trinitario)?",
+        "Sin embargo, la respuesta no ha sido nada fácil de obtener, y todavía estamos en proceso de poder responder esta sencilla pregunta. Tras mucha investigación estamos preparados para lanzarnos al proceso"
+      ],
+      "Agenda": [
+        {
+          "title": "Abril del 2020",
+          "content": "Se habla de la necesidad de elementos que nos representen y vuelvan a la trinidad accesible."
+        },
+        {
+          "title": "Septiembre del 2020",
+          "content": "Comenzamos con el estudio de los elementos que darán lugar en el futuro a la estrategia de marca ciudad."
+        },
+        {
+          "title": "Febrero del 2021",
+          "content": "Se entiende marca ciudad como la vía estratégica para gestionar la ciudad. Se comienza su estudio y se planifica arrancar tras 12 meses de preparación."
+        },
+        {
+          "title": "Febrero del 2022",
+          "content": "Inicio del proceso de análisis e investigación sobre Marca Trinidad."
+        },
+        {
+          "title": "Abril del 2022",
+          "content": "Elaboración de entrevistas y encuestas a miembros de la sociedad trinitaria sobre la Marca Trinidad."
+        }
+      ]
+    },
+    "News": {
+      "Results": "resultados"
+    },
+    "NotFound": {},
+    "Navbar": {
+      "Title": "Menú",
+      "Links": [
+        {
+          "id": "home",
+          "label": "Inicio",
+          "route": "/",
+          "index": 0
+        },
+        {
+          "id": "about-us",
+          "label": "Marca Trinidad",
+          "route": "/about-us",
+          "index": 1
+        },
+        {
+          "id": "news",
+          "label": "Noticias",
+          "route": "/news",
+          "index": 4
+        },
+        {
+          "id": "contact-us",
+          "label": "Participación Ciudadana",
+          "route": "/contact-us",
+          "index": 5
+        }
+      ],
+      "Participate": "Quiero participar",
+      "SearchModal": {
+        "Label": "Buscar"
+      }
+    },
+    "Footer": {
+      "Description": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia laborum hic eos deserunt ipsum quas corrupti pariatur magnam voluptas odit, possimus vitae unde quo maxime quod, libero quasi natus rem.",
+      "UtilLinks": {
+        "Title": "Enlaces útiles",
+        "Links": [
+          {
+            "id": "privacy-policy",
+            "label": "Política de Privacidad",
+            "route": "/privacy-policy",
+            "index": 6
+          },
+          {
+            "id": "cookies-policy",
+            "label": "Política de Cookies",
+            "route": "/cookies-policy",
+            "index": 7
+          }
+        ]
+      },
+      "ContactLinks": {
+        "Title": "Contáctenos",
+        "Links": [
+          {
+            "id": "phone",
+            "label": "Teléfono: 555 555 55",
+            "action": "tel:+55555555"
+          },
+          {
+            "id": "email",
+            "label": "Correo electrónico: site@email.com",
+            "action": "mailto:site@email.com"
+          },
+          {
+            "id": "address",
+            "label": "Alguna dirección"
+          }
+        ]
+      },
+      "Copyright": "Copyright © 2021 - Santiago Cultural creado por Inmersoft"
+    },
+    "Card": {
+      "Button": "Ver producto"
+    }
+  }
+}
