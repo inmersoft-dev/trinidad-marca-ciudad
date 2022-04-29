@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/trinidad-marca-ciudad/static/css/main.d354a40d.css",
+    "main.js": "/trinidad-marca-ciudad/static/js/main.abac392b.js",
+    "static/media/about.png": "/trinidad-marca-ciudad/static/media/about.0e4eef7f7b44270bb987.png",
+    "static/media/contact.jpg": "/trinidad-marca-ciudad/static/media/contact.796949d337a9fe0b10de.jpg",
+    "static/media/hero1.jpg": "/trinidad-marca-ciudad/static/media/hero1.8b967266da099494bbbb.jpg",
+    "static/media/illus.svg": "/trinidad-marca-ciudad/static/media/illus.71baef454f16d610978fe74c48bb8786.svg",
+    "static/media/bruce-mars.jpg": "/trinidad-marca-ciudad/static/media/bruce-mars.45f6477957606abd2f24.jpg",
+    "index.html": "/trinidad-marca-ciudad/index.html",
+    "main.d354a40d.css.map": "/trinidad-marca-ciudad/static/css/main.d354a40d.css.map",
+    "main.abac392b.js.map": "/trinidad-marca-ciudad/static/js/main.abac392b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d354a40d.css",
+    "static/js/main.abac392b.js"
+  ]
+}
